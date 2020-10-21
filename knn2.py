@@ -52,7 +52,7 @@ print(dataSize)
 trainSize = int(m * dataSize)
 testSize = int((1 - m) * dataSize)
 print(trainSize, testSize)
-k = 3
+k = 9
 error = 0
 for i in range(testSize):
     result = K.knn(dataSet[trainSize + i - 1, :], dataSet[0:trainSize, :], irisLabels[0:trainSize], k)
